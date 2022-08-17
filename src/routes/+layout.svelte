@@ -2,6 +2,6 @@
 	import '../app.css';
 </script>
 
-<main>
+<main class="text-body-copy">
 	<slot />
 </main>
