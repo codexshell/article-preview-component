@@ -1,5 +1,6 @@
 <script>
 	import Card from '../lib/Card.svelte';
+import Date from '../lib/Date.svelte';
 </script>
 
 <svelte:head>

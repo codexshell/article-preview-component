@@ -18,8 +18,6 @@
 
 	// join the array elements back together removing the delimeter
 	newDate = newDate.join(' ');
-
-	$: console.log(newDate);
 </script>
 
 <time datetime={date}>{newDate}</time>
