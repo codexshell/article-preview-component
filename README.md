@@ -1,38 +1,77 @@
-# create-svelte
+# Frontend Mentor - Article preview component solution
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Creating a project
+## Table of contents
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Overview
 
-# create a new project in my-app
-npm create svelte@latest my-app
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the component depending on their device's screen size
+- See the social media share links when they click the share icon
+
+### Screenshot
+
+![desktop preview](./screenshot.png)
+
+### Links
+
+- Solution URL: [source code](https://github.com/codexshell/article-preview-component)
+- Live Site URL: [website](https://article-preview-component-7tlc7lwcz-codexshell.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [BEM](http://getbem.com/) - CSS Methodology
+- [CUBE CSS](https://cube.fyi/) - CSS Methodology
+- [tailwindcss](https://tailwindcss.com/) - CSS framework
+- [SvelteKit](https://kit.svelte.dev/) - Svelte Framework
+
+### What I learned
+
+- Before using the `object-fit` CSS property one must explicity specify an intial width and height for the `img` element.
+- This can be demonstrated as below:
+
+```css
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 ```
 
-## Developing
+- `width` and `height` are to be set as per one's requirement.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Continued development
 
-```bash
-npm run dev
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### Useful resources
 
-## Building
+- [CSS The object-fit Property](https://www.w3schools.com/css/css3_object-fit.asp) - This helped me realize that before using the `object fit` CSS property one has to first explicity set an initial width and height.
 
-To create a production version of your app:
+## Author
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- Website - [Silvanos Eric](https://codexshell.github.io/)
+- Frontend Mentor - [@codexshell](https://www.frontendmentor.io/profile/codexshell)
+- Twitter - [@codexshell](https://twitter.com/codexshell)
