@@ -11,6 +11,16 @@
 
 	const handleClick = () => {
 		showShare = !showShare;
+	}
+
+	const handleKey = (e) => {
+		if (e) {
+			if (e.key === 'Enter') {
+				showShare = !showShare;
+				console.log(e.key);
+			}
+		}
+		// showShare = !showShare;
 	};
 
 	// extract first name and use to loading avatar
@@ -47,7 +57,7 @@
 				<Date {date} />
 			</div>
 
-			<div class:share={showShare}  class="footer__share" on:click={handleClick}>
+			<div tabindex="0" class:share={showShare}  class="footer__share" on:keydown="{handleKey}" on:click={handleClick}>
 				<img class:shareIcon={showShare} src="icon-share.svg" alt="" />
 			</div>
 		</footer>
