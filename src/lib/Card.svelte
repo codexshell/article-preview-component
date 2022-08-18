@@ -17,7 +17,6 @@
 		if (e) {
 			if (e.key === 'Enter') {
 				showShare = !showShare;
-				console.log(e.key);
 			}
 		}
 		// showShare = !showShare;
