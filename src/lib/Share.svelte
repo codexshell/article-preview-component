@@ -1,8 +1,10 @@
 <script>
+	import { fade } from 'svelte/transition';
+
 	export let handleClick;
 </script>
 
-<footer class="share | bg-very-dark-grayish-blue">
+<footer transition:fade class="share | bg-very-dark-grayish-blue">
 	<span class="share__heading">share</span>
 	<div class="share__content">
 		<div class="share__icon"><img src="icon-facebook.svg" alt="" /></div>
@@ -22,6 +24,31 @@
 		gap: 1rem;
 		padding-inline: theme('padding.8');
 		min-height: theme('height.16');
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	@media (min-width: theme('screens.lg')) {
+		.share {
+			inset: unset;
+			right: -4.35rem;
+			bottom: 6.5rem;
+			border-radius: theme('borderRadius.lg');
+			gap: 1.5rem;
+		}
+
+		.share::after {
+			content: '';
+			width: 1.25rem;
+			aspect-ratio: 1 / 1;
+			background-color: theme('colors.very-dark-grayish-blue');
+			position: absolute;
+			bottom: -0.6rem;
+			left: 50%;
+			transform: translateX(-50%) rotate(45deg);
+		}
 	}
 
 	.share__heading {
@@ -45,6 +72,12 @@
 		background-color: theme('colors.desaturated-dark-blue');
 		border-radius: theme('borderRadius.full');
 		cursor: pointer;
+	}
+
+	@media (min-width: theme('screens.lg')) {
+		.share__figure {
+			display: none;
+		}
 	}
 
 	.share__icon {
