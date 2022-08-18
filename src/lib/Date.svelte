@@ -21,3 +21,9 @@
 </script>
 
 <time datetime={date}>{newDate}</time>
+
+<style>
+	time {
+		color: theme('colors.grayish-blue');
+	}
+</style>

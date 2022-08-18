@@ -15,7 +15,7 @@ import Date from '../lib/Date.svelte';
 		date="2020-06-28"
 	>
 		<h2 slot="heading">
-			Shift the overall look and feel by adding these wonderful touches to furniture in your home.
+			Shift the overall look and feel by adding these wonderful touches to furniture in your home
 		</h2>
 		<p slot="description">
 			Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and

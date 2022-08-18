@@ -13,7 +13,7 @@ module.exports = {
 				'body-copy': '13px'
 			},
 			fontFamily: {
-				heading: ['Manrope', 'sans-serif']
+				body: ['Manrope', 'sans-serif']
 			}
 		}
 	},
